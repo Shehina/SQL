@@ -4,7 +4,7 @@ CREATE DATABASE Employee;
 SHOW DATABASES;
 
 CREATE TABLE 
-SQL> CREATE TABLE Details(
+CREATE TABLE Details(
    ID   INT              NOT NULL,
    NAME VARCHAR (20)     NOT NULL,
    AGE  INT              NOT NULL,
@@ -16,11 +16,11 @@ SQL> CREATE TABLE Details(
 INSERT
 INSERT INTO Details(ID,NAME,AGE,ADDRESS,SALARY)
 VALUES (1, 'Ramesh', 32, 'Ahmedabad', 2000.00 );
-VALUES (2, 'Sonu', 32, 'Kolkata', 2500.00 );
-VALUES (3, 'Satheesh', 32, 'Rajasthan', 3000.00 );
-VALUES (4, 'Arnav', 32, 'Mumbai', 4000.00 );
-VALUES (5, 'Binoy', 32, 'Bihar', 5000.00 );
-VALUES (6, 'Rajesh', 32, 'Alahabad', 6000.00 );
+VALUES (2, 'Sonu', 40, 'Kolkata', 4500.00 );
+VALUES (3, 'Satheesh', 28, 'Rajasthan', 3000.00 );
+VALUES (4, 'Arnav', 45, 'Mumbai', 4000.00 );
+VALUES (5, 'Binoy', 37, 'Bihar', 5000.00 );
+VALUES (6, 'Rajesh', 30, 'Alahabad', 6000.00 );
 
 SELECT
 SELECT ID, NAME, SALARY FROM Details;
