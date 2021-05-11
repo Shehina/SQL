@@ -1,0 +1,53 @@
+CREATE DATABASE DatabaseName;
+DROP DATABASE DatabaseName;
+USE DatabaseName;
+SHOW DATABASES;
+
+
+CREATE DATABASE
+CREATE DATABASE Employee;
+
+SHOW DATABASES;
+
+CREATE TABLE 
+SQL> CREATE TABLE Details(
+   ID   INT              NOT NULL,
+   NAME VARCHAR (20)     NOT NULL,
+   AGE  INT              NOT NULL,
+   ADDRESS  CHAR (25) ,
+   SALARY   DECIMAL (18, 2),       
+   PRIMARY KEY (ID)
+);
+
+INSERT
+INSERT INTO Details(ID,NAME,AGE,ADDRESS,SALARY)
+VALUES (1, 'Ramesh', 32, 'Ahmedabad', 2000.00 );
+VALUES (2, 'Sonu', 32, 'Kolkata', 2500.00 );
+VALUES (3, 'Satheesh', 32, 'Rajasthan', 3000.00 );
+VALUES (4, 'Arnav', 32, 'Mumbai', 4000.00 );
+VALUES (5, 'Binoy', 32, 'Bihar', 5000.00 );
+VALUES (6, 'Rajesh', 32, 'Alahabad', 6000.00 );
+
+SELECT
+SELECT ID, NAME, SALARY FROM Details;
+
+UPDATE
+UPDATE Details
+SET ADDRESS = 'Pune'
+WHERE ID = 6;
+
+DELETE
+DELETE FROM Details
+WHERE ID = 6;
+
+ORDER BY 
+SELECT * FROM Details
+ORDER BY NAME, SALARY;
+SELECT * FROM Details
+ORDER BY NAME DESC;
+
+DROP TABLE
+DROP TABLE Details;
+
+DROP DATABASE
+DROP DATABASE Employee;
